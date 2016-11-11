@@ -40,3 +40,5 @@ vagrant destroy VM_NAME
 ## Next Action
 https://github.com/YasuhideKato/apiteam-season2-workshop-apigw-allinone
 
+## Others
+TBD
