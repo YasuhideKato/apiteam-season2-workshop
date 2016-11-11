@@ -39,7 +39,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     jump.vm.box = "centos66" 
     jump.vm.network "private_network", ip: "192.168.33.5"
     jump.vm.hostname = "jump"
-    jump.vm.synced_folder "../apigw_module", "/vagrant", mount_options: ['dmode=775','fmode=775']
+    jump.vm.synced_folder "../apiteam-season2-workshop-apigw-allinone", "/vagrant", mount_options: ['dmode=775','fmode=775']
     jump.vm.provision "shell", inline: $jump_host
     jump.vm.provision "shell", inline: $script
     #jump.vm.provision "shell", inline: $script1
@@ -49,7 +49,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     edge.vm.box = "centos66" 
     edge.vm.network "private_network", ip: "192.168.33.10"
     edge.vm.hostname = "edge"
-    edge.vm.synced_folder "../apigw_module", "/vagrant", mount_options: ['dmode=775','fmode=775']
+    edge.vm.synced_folder "../apiteam-season2-workshop-apigw-allinone", "/vagrant", mount_options: ['dmode=775','fmode=775']
     edge.vm.provision "shell", inline: $edge_host
     edge.vm.provision "shell", inline: $script
   end
@@ -58,7 +58,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     baas.vm.box = "centos66"
     baas.vm.network "private_network", ip: "192.168.33.20"
     baas.vm.hostname = "baas"
-    baas.vm.synced_folder "../apigw_module", "/vagrant", mount_options: ['dmode=775','fmode=775']
+    baas.vm.synced_folder "../apiteam-season2-workshop-apigw-allinone", "/vagrant", mount_options: ['dmode=775','fmode=775']
     baas.vm.provision "shell", inline: $baas_host
     baas.vm.provision "shell", inline: $script
   end
