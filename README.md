@@ -5,7 +5,7 @@
 * Install VirtualBox and Vagrant  
 VirtualBox: <https://www.virtualbox.org/>  
 Vagrant: <https://www.vagrantup.com/>  
-NOTICE: Just now, you should use VirtualBox ver.5.0.x
+NOTICE: Just now, you should use VirtualBox ver.5.0.x  
 https://www.virtualbox.org/wiki/Download_Old_Builds_5_0
 NOTICE: Just now, you should use vagrant ver. 1.7.4  
 https://releases.hashicorp.com/vagrant/1.7.4/
